@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Anchor Junior School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        h1, h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        .section {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-right: 1rem;
+        }
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        /* Chat button */
+        .chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .chat-btn i {
+            font-size: 1.5rem;
+        }
+        /* Chat popup */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            border: 3px solid #4CAF50;
+            z-index: 9;
+            background-color: white;
+            width: 300px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .chat-popup .form-container {
+            padding: 10px;
+        }
+        .chat-popup .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        .chat-popup .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .chat-popup .form-container .btn:hover {
+            background-color: #45a049;
+        }
+        .chat-popup .form-container .cancel {
+            background-color: red;
+        }
+        .chat-popup .form-container .cancel:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Get in Touch</h2>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>Tel: <a href="tel:+254707740135">0707 740 135</a> / <a href="tel:+254735938231">0735 938 231</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email: <a href="mailto:anchorjacadememy@gmail.com">anchorjacadememy@gmail.com</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Address: P.O BOX 17294-00510, Nairobi.</span>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Chat button -->
+    <button class="chat-btn" onclick="openChat()">
+        <i class="fas fa-comments"></i>
+    </button>
+    
+    <!-- Chat popup -->
+    <div class="chat-popup" id="chatForm">
+        <div class="form-container">
+            <h3>Chat with Us</h3>
+            <textarea placeholder="Type your message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeChat()">Close</button>
+        </div>
+    </div>
+
+       <!-- Footer -->
+       <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Anchorjr Academy</h5>
+                    <p>Fostering academic excellence and holistic development.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html" class="text-dark">Home</a></li>
+                        <li><a href="about.html" class="text-dark">About</a></li>
+                        <li><a href="admissions.html" class="text-dark">Admissions</a></li>
+                        <li><a href="academic_programs.html" class="text-dark">Academics</a></li>
+                        <li><a href="student_life.html" class="text-dark">Student Life</a></li>
+                        <li><a href="contact.html" class="text-dark">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook-f me-2"></i>Facebook</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank" class="text-dark"><i class="fab fa-twitter me-2"></i>Twitter</a></li>
+                        <li><a href="https://www.tiktok.com" target="_blank" class="text-dark"><i class="fab fa-tiktok me-2"></i>TikTok</a></li>
+                        <li><a href="https://www.youtube.com" target="_blank" class="text-dark"><i class="fab fa-youtube me-2"></i>YouTube</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" class="text-dark"><i class="fab fa-linkedin-in me-2"></i>LinkedIn</a></li>
+                        <li><a href="mailto:your.email@example.com" class="text-dark"><i class="fas fa-envelope me-2"></i>Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-dark text-light">
+            © 2023 Anchorjr Academy. All rights reserved.
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+
+    <script src="/home/giddyuser/Desktop/anchorjr_academy/static/js/scripts.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+    <script>
+        function openChat() {
+            document.getElementById("chatForm").style.display = "block";
+        }
+
+        function closeChat() {
+            document.getElementById("chatForm").style.display = "none";
+        }
+    </script>
+</body>
+</html>

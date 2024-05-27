@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchorjr Academy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    /* Style for the header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+      transition: top 0.3s; /* Add smooth transition for the header */
+    }
+
+    /* Add some padding to the sections */
+    .section {
+      padding: 50px 0;
+    }
+
+    /* Style for the scroll-to-top button */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #0056b3;
+    }
+
+    /* Add animations for section elements */
+    .section h2 {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .section p {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Keyframe animation for fading in */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Anchorjr Academy</h1>
+  </header>
+
+  <!-- Sections -->
+  <div class="container">
+    <section class="section motto">
+      <h2>SCHOOL MOTTO</h2>
+      <p>Nurturing a Stable Foundation.</p>
+    </section>
+    <section class="section mission">
+      <h2>MISSION</h2>
+      <p>Anchor Junior School strives to provide excellence in education, in a caring, friendly environment, where each pupil is nurtured and shaped by values, has the opportunity to achieve full potential and to develop a passion for life through learning.</p>
+    </section>
+    <section class="section vision">
+      <h2>OUR VISION</h2>
+      <p>Nurture each student's personal aspirations within a vibrant learner-centered community.</p>
+    </section>
+    <section class="section values">
+      <h2>Statement of Values</h2>
+      <p>In partnership with parents, Anchor Junior School pledges to integrate these values, not only in our policies but also in our daily lives:</p>
+      <p>Respect for ourselves and our fellow human beings is fundamental. When we respect others, we treat them with honesty and integrity.</p>
+    </section>
+    <section class="section anthem">
+      <h2>SCHOOL ANTHEM</h2>
+      <p><strong>1. Anchor Junior Academy, learning new things through the year. All you need is belief in yourself, Aim for the top if you dare. Nurturing a stable foundation</strong></p>
+      <p>Refrain: This is AJA Motto, Confidence and passion is the key to go far.....x2</p>
+      <p><strong>2. Working hard day after day, dreaming big, believing we can, discover all that life may offer, our lives, to achieve our goals</strong></p>
+      <p><strong>3. We ask God to guide us in all we do, to help us be prudent and wise, that we might find perfect goodness. Anchor will help us get there.</strong></p>
+    </section>
+    <section class="section poem">
+      <h2>SCHOOL POEM</h2>
+      <p>Anchor Junior Academy, a vibrant learner-centered community. Strives to provide excellent education in a caring, friendly environment And shaping each pupil by values. Our motto; nurturing a stable foundation to achieve full potential, Develop a passion for life through learning, the key to a bright and rewarding future, A path to divine success. Anchor Junior Academy, helps drive away all our ignorance, Gives our thinking a different appearance, through education. Leading us to the path of prosperity and shaping our true character. Education a fundamental foundation in our school, A ladder that takes us to the height where we belong, The key to unlock the golden door of our freedom, we commit ourselves to An unquenchable curiosity for discovering all that this life may offer. Not in another place, not everywhere else BUT in Anchor Junior Academy.</p>
+    </section>
+    <section class="section values">
+      <h2>VALUES</h2>
+      <h3>DISCOVERY</h3>
+      <p>Learning is a lifelong process. We commit ourselves to an unquenchable curiosity for discovering all that this life may offer. We recognize that we may not always find the answers, but we will continue to ask the questions.</p>
+      <h3>RESPONSIBILITY</h3>
+      <p>Responsibility requires that we do our best in all that we undertake. We have an obligation to ourselves to fulfill our own potentials, we have an obligation to others to fulfill the commitments that we have made, and we have an obligation to our Maker to lead lives of meaning and purpose.</p>
+      <h3>EXCELLENCE</h3>
+      <p>We seek excellence in all that we undertake, setting goals and achieving them, steadfast in our commitment to moral behavior. Excellence is a product of attentiveness and firmness, risk and sacrifice; we celebrate our successes and those of others.</p>
+    </section>
+  </div>
+
+  <!-- Scroll to top button -->
+<button class="scroll-to-top" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 2c-.7 0-1.37.28-1.86.76l-8.14 8.48c-.39.41-.64.94-.64 1.51s.25 1.1.64 1.51l1.41 1.48c.39.41 1.02.45 1.45.1l4.58-4.79 4.57 4.79c.21.22.48.33.75.33.27 0 .55-.1.76-.33l1.41-1.48c.39-.41.64-.94.64-1.51s-.25-1.1-.64-1.51L13.86 2.76A2.63 2.63 0 0 0 12 2zm0 15c-.39 0-.75-.22-.97-.57l-3.02-4.15 1.44-1.44 2.58 3.53 2.56-3.53 1.44 1.44-3.02 4.15c-.22.35-.58.57-.97.57z"/>
+    </svg>
+  </button>
+  

@@ -1,0 +1,197 @@
+/* home.css */
+
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    color: #007bff;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.social-icons .nav-link {
+    color: #333;
+}
+
+.social-icons .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#heroCarousel .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+/* Map Section */
+.map {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.map h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.map-container iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .bg-dark {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+
+/* Custom CSS for map styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+  
+  .info-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .info-box h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Additional styling for header */
+  header {
+    background-color: #fdf906; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure header is above other content */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Move navigation items to the right */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Padding for navigation links */
+  }
+  
+  /* Sticky header on scroll */
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s ease forwards; /* Smooth transition */
+    z-index: 1000;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,820 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+
+
+a {
+    color: #e0c62e; /* Yellow color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header Styles */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(25, 69, 173, 0.1);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .text-primary {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-item {
+    color: #555;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.social-icons .nav-item .nav-link {
+    font-size: 1.0rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-icons .nav-item .nav-link:hover {
+    color: #046ddd;
+}
+  
+
+  /* Styles for Hero Section Carousel */
+ 
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.carousel-caption {
+    text-align: center;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+.animate__animated {
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+
+
+/* Styles for the download section */
+.download-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .download-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Styles for the download button */
+  .btn-download {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-download:hover {
+    background-color: #0056b3;
+  }
+  
+/* Section Styles */
+section {
+    padding: 5rem 0;
+    background-color: white; /* White background for sections */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333; /* Black color for section headings */
+}
+
+section p {
+    font-size: 1.125rem;
+    color: #555; /* Dark grey color for paragraph text */
+}
+
+section .btn {
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #646164; /* Grey color for about section background */
+}
+
+/* Academic Programs Section */
+.academic-programs-section {
+    background-color: #3c3f42; /* Dark grey color for academic programs section background */
+}
+
+.academic-programs-section h3 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.academic-programs-section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Student Life Section */
+.student-life-section {
+    background-color: #fff; /* White color for student life section background */
+}
+
+.student-life-section h3 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.student-life-section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Admissions Section */
+.admissions-section {
+    background-color: #a0a3a5; /* Grey color for admissions section background */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #706e6e; /* Dark grey color for testimonials section background */
+}
+
+.testimonials-section blockquote {
+    font-size: 1rem;
+    border-left: 5px solid #c0cddb;
+    padding-left: 1rem;
+}
+
+.testimonials-section .blockquote-footer {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #007bff; /* Blue color for call to action section background */
+    color: #fff;
+    padding: 50px 0;
+}
+
+.cta-section .btn {
+    color: #007bff;
+    background-color: #fff;
+    border: none;
+}
+
+.cta-section .btn:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border: 1px solid #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark grey color for footer background */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #heroCarousel h1 {
+        font-size: 2.5rem;
+    }
+
+    #heroCarousel p {
+        font-size: 1rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Motto Section Styles */
+.section.motto {
+    background-color: #fff; /* School uniform color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border: 2px solid #00796b; /* School uniform color */
+    border-radius: 5px;
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+}
+
+.section.motto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00796b; /* School uniform color */
+}
+
+.section.motto p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font for paragraph text */
+}
+
+
+
+
+
+/* Mission Section Styles */
+.section.mission {
+    background-color: #fff; /* School uniform color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border: 2px solid #00796b; /* School uniform color */
+    border-radius: 5px;
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+}
+
+.section.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00796b; /* School uniform color */
+}
+
+.section.mission p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font for paragraph text */
+}
+
+
+
+
+/* Vision Section Styles */
+.section.vision {
+    background-color: #fff; /* School uniform color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border: 2px solid #00796b; /* School uniform color */
+    border-radius: 5px;
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+}
+
+.section.vision h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00796b; /* School uniform color */
+}
+
+.section.vision p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font for paragraph text */
+}
+
+
+
+
+/* Values Section Styles */
+.section.values {
+    background-color: #fff; /* School uniform color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border: 2px solid #00796b; /* School uniform color */
+    border-radius: 5px;
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+}
+
+
+/* Anthem Section Styles */
+.section.anthem {
+    background-color: #ffc107; /* Use a patriotic color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border: 2px solid #212529; /* Dark color for contrast */
+    border-radius: 5px;
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+    font-family: 'Georgia', serif; /* Use a serif font for a traditional feel */
+}
+
+.section.anthem h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #212529; /* Dark color for contrast */
+}
+
+.section.anthem p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5; /* Increase line height for readability */
+    color: #212529; /* Dark color for contrast */
+}
+
+.section.anthem strong {
+    font-weight: bold;
+    color: #212529; /* Dark color for contrast */
+}
+
+
+
+/* VALUES Section Styles */
+.section.values {
+    padding: 2rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    max-width: 800px; /* Optional: Limit maximum width */
+}
+
+.section.values h2 {
+    font-size: 2rem;
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 1rem;
+}
+
+.section.values h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue color for headings */
+    margin-top: 2rem; /* Add some space above each heading */
+}
+
+.section.values p {
+    font-size: 1rem;
+    color: #666; /* Slightly darker than body text color */
+    margin-bottom: 1.5rem; /* Add space between paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+
+
+
+/* Poem Section Styles */
+.poem {
+    background-color: #e0f7fa; /* School uniform color */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the section horizontally */
+    border-left: 5px solid #00796b; /* School uniform color */
+    max-width: 800px; /* Optional: Limit maximum width */
+    text-align: center; /* Center align text */
+}
+
+.poem h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00796b; /* School uniform color */
+}
+
+.poem p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-indent: 1em; /* Optional: Add an indentation for the poem lines */
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 4rem 0; /* Add more padding for better spacing */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #333; /* Dark color for headings */
+    margin-bottom: 2rem;
+}
+
+.about-section p {
+    font-size: 1.125rem;
+    color: #666; /* Slightly darker than body text color */
+    margin-bottom: 2rem; /* Add space below the paragraph */
+}
+
+.about-section .btn {
+    font-size: 1rem;
+    color: #007bff; /* Blue color for button text */
+    border-color: #007bff; /* Blue border color */
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.about-section .btn:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f9f9f9; /* Set background color */
+    padding: 80px 0; /* Add padding */
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    margin-bottom: 40px; /* Add margin bottom */
+    color: #333; /* Set text color */
+}
+
+.testimonials-section .blockquote {
+    border: none; /* Remove border */
+    background-color: #fff; /* Set background color for blockquote */
+    padding: 30px; /* Add padding */
+    border-radius: 7px; /* Add border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    margin-bottom: 30px; /* Add margin bottom */
+}
+
+.testimonials-section .blockquote p {
+    font-size: 1.1rem; /* Set font size for quote */
+    margin-bottom: 20px; /* Add margin bottom */
+}
+
+.testimonials-section .blockquote-footer {
+    font-size: 1rem; /* Set font size for author */
+    color: #777; /* Set text color */
+}
+/* Call to Action Section */
+.cta-section {
+    text-align: center; /* Center align content */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 80px 0; /* Add padding */
+}
+
+.cta-section h2 {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    margin-bottom: 40px; /* Add margin bottom */
+}
+
+.cta-section .btn {
+    color: #007bff; /* Set text color for button */
+    background-color: #fff; /* Set background color for button */
+    border: 2px solid #fff; /* Add border to button */
+    padding: 15px 30px; /* Add padding to button */
+    font-size: 1.2rem; /* Set font size for button */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+.cta-section .btn:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: transparent; /* Set background color to transparent on hover */
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Form Styles */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+/*employment*/
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    color: #007bff;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.social-icons .nav-link {
+    color: #333;
+}
+
+.social-icons .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#heroCarousel .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+/* Map Section */
+.map {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.map h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.map-container iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .bg-dark {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+
+/* Custom CSS for map styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+  
+  .info-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .info-box h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Additional styling for header */
+  header {
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure header is above other content */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Move navigation items to the right */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Padding for navigation links */
+  }
+  
+  /* Sticky header on scroll */
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s ease forwards; /* Smooth transition */
+    z-index: 1000;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

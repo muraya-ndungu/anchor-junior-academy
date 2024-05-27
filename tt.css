@@ -1,0 +1,27 @@
+/* Footer Styling */
+.footer {
+    background-color: #f5f5f5; /* Optional: Set a background color */
+  }
+  
+  .footer .text-dark {
+    color: #212529; /* Adjust text color for better contrast */
+  }
+  
+  .footer a {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .footer a:hover {
+    color: #007bff; /* Add hover effect for links */
+  }
+  
+  .footer .fa-envelope,
+  .footer .fa-phone-alt,
+  .fa-map-marker-alt {
+    margin-right: 5px;
+  }
+  
+  /* Optional: Center newsletter signup form */
+  .footer .d-flex {
+    justify-content: center;
+  }
