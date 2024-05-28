@@ -1,5 +1,6 @@
 
-  <!DOCTYPE html>
+  
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +18,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/home/giddyuser/Desktop/anchorjr_academy/static/css/home.css">
-    <link rel="stylesheet" href="/home/giddyuser/Desktop/anchorjr_academy/static/css/about.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="index.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,19 +45,18 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="/home/giddyuser/Desktop/anchorjr_academy/static/images/ANCHOR LOGO.jpg" alt="School Logo" width="40" height="40" class="rounded-circle">
-                    <span class="ms-3 text-primary fs-4">Anchorjr Academy</span>
+                    <img src="ANCHOR LOGO.jpg" alt="School Logo" width="40" height="40" class="rounded-circle">
+                    <span class="ms-3 text-primary font-weight-light fs-5">Anchor<sup>jr</sup> Academy</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
                         <li class="nav-item"><a class="nav-link" href="academic_programs.html">Academics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="student_life.html">Student</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,21 +69,59 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto social-icons">
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
                 </div>
             </div>
         </nav>
     </header>
       
 
+    <!-- Hero Section with Carousel -->
+    
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('IMG_20240212_161613_112.jpg');">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-shadow">
+                    <h1 class="display-3 text-white animate__animated animate__fadeInDown">Welcome to Anchorjr Academy</h1>
+                    <p class="lead text-white animate__animated animate__fadeInUp">Fostering academic excellence and holistic development.</p>
+                    <a href="about.html" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('IMG_20240212_161654_478.jpg');">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-shadow">
+                    <h1 class="display-3 text-white animate__animated animate__fadeInDown">Innovative Programs</h1>
+                    <p class="lead text-white animate__animated animate__fadeInUp">Engaging students with a blend of traditional and modern educational practices.</p>
+                    <a href="academic_programs.html" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Explore Academics</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('IMG_20240212_161656_871.jpg);">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-shadow">
+                    <h1 class="display-3 text-white animate__animated animate__fadeInDown">Join Our Community</h1>
+                    <p class="lead text-white animate__animated animate__fadeInUp">Where every student feels valued and inspired to excel.</p>
+                    <a href="admissions.html" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-c￼
+            ontrol-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!-- Hero Section with Carousel -->
     
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
