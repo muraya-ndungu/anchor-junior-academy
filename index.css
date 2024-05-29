@@ -106,7 +106,7 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #20b1dd;
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -128,7 +128,7 @@ a:hover {
 
 .animate__animated {
     animation-duration: 1.5s;
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
     animation-fill-mode: both;
 }
 
