@@ -81,9 +81,77 @@ a:hover {
   
 
   /* Styles for Hero Section Carousel */
- 
+
+  .carousel-item {
+    height: 100vh; /* Adjust height as needed */
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+        transition: transform 2s ease, opacity 2s ease;
+    background-repeat: no-repeat;
+
+}
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    object-fit: cover;}
+
+.carousel-caption {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+.animate__animated {
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
 
 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.back-to-top.visible {
+    display: block;
+}
+
+ /*hero old */
+
+/*
 .carousel-item {
     height: 100vh;
     min-height: 400px;
@@ -94,7 +162,7 @@ a:hover {
 }
 .carousel-item img {
     width: 100%;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
     object-fit: cover;}
 
 .carousel-caption {
@@ -132,7 +200,7 @@ a:hover {
     animation-fill-mode: both;
 }
 
-
+*/
 
 /* Styles for the download section */
 .download-section {
