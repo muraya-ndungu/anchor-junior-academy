@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarCollapse.classList.toggle('show');
     });
 //navigation bar
-    <script>
+
     document.addEventListener('DOMContentLoaded', function () {
         var navbarToggler = document.querySelector('.navbar-toggler');
         navbarToggler.addEventListener('click', function () {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navbarCollapse.classList.toggle('show');
         });
     });
-</script>
+
 
 
     // Noticeboard Section
