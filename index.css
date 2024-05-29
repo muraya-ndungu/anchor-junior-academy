@@ -92,6 +92,10 @@ a:hover {
     position: relative;
     transition: transform 2s ease, opacity 2s ease;
 }
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    object-fit: cover;}
 
 .carousel-caption {
     text-align: center;
@@ -819,4 +823,19 @@ body, html {
     }
   }
 
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.back-to-top.visible {
+    display: block;
 }

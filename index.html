@@ -257,28 +257,44 @@
     <section class="testimonials-section py-5 text-center">
         <div class="container">
             <h2>What Our Students Say</h2>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
                     <blockquote class="blockquote bg-light p-4 rounded">
                         <p class="mb-0">"Anchorjr Academy has been a place where I discovered my passion for science and technology."</p>
-                        <footer class="blockquote-footer">gilbert terel</footer>
+                        <footer class="blockquote-footer">Gilbert Terel</footer>
                     </blockquote>
                 </div>
-                <div class="col-md-4">
+                <div class="item">
                     <blockquote class="blockquote bg-light p-4 rounded">
                         <p class="mb-0">"The teachers here are amazing. They really care about our success both academically and personally."</p>
-                        <footer class="blockquote-footer">catherine maina</footer>
+                        <footer class="blockquote-footer">Catherine Maina</footer>
                     </blockquote>
                 </div>
-                <div class="col-md-4">
+                <div class="item">
                     <blockquote class="blockquote bg-light p-4 rounded">
                         <p class="mb-0">"I've made lifelong friends and memories through the various clubs and activities offered."</p>
-                        <footer class="blockquote-footer">julian ndungu</footer>
+                        <footer class="blockquote-footer">Julian Ndungu</footer>
                     </blockquote>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true
+            });
+        });
+    </script>
+    <!--download brochure section-->
 <section class="download-section">
   <div class="container">
     <h2>Download Our Brochure</h2>
@@ -359,7 +375,7 @@
     <!-- Custom JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
 
-    <script src="C:\Users\USER\Downloads\anchor\index1.js"></script>
+    <script src="index.js"></script>
 
     <!-- Carousel Functionality (Using Bootstrap)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
