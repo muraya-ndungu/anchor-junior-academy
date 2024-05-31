@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const bodyParser = require('body-parser');
+
 const cors = require('cors');
 const connectDB = require('./config/db');
 
@@ -29,8 +29,10 @@ mongoose.connect(MONGO_URI).then(() => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Anchorjr Academy Backend');
+    res.send('anchorjr_academy_backend');
 });
 
 // Middleware
 app.use(express.json());
+
+
