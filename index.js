@@ -15,6 +15,30 @@ document.addEventListener('DOMContentLoaded', function () {
             navbarCollapse.classList.toggle('show');
         });
     });
+//search funtionality
+const searchIcon = document.getElementById('searchIcon');
+const searchInput = document.getElementById('searchInput');
+const cancelSearchBtn = document.getElementById('cancelSearchBtn');
+const searchContainer = document.querySelector('.search-container');
+
+searchIcon.addEventListener('click', () => {
+    searchContainer.classList.toggle('active');
+    if (searchContainer.classList.contains('active')) {
+        searchInput.focus();
+    }
+});
+
+cancelSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    searchContainer.classList.remove('active');
+});
+
+searchInput.addEventListener('blur', () => {
+    if (searchInput.value === '') {
+        searchContainer.classList.remove('active');
+    }
+});
+
 
 
 

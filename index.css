@@ -39,7 +39,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fcb900;
+    color: #18f1f1;
     background-color: #f8f9fa;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -53,7 +53,7 @@ body {
 
 .dropdown-menu:hover {
     display: block;
-    margin-top: 0; /* Adjust as needed to prevent the menu from shifting */
+    margin-top: 0; 
 }
 
 .nav-item.dropdown {
@@ -99,7 +99,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: yellow;
+    background-color: #fcb900;
     transition: width 0.3s;
 }
 
@@ -107,7 +107,43 @@ body {
     width: 100%;
 }
 
-  
+    /* Search bar styling */
+    .search-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        display: none;
+        width: 0;
+        transition: width 0.3s, display 0s 0.3s;
+    }
+
+    .search-container.active .search-input {
+        display: inline-block;
+        width: 200px;
+        margin-left: 10px;
+        transition: width 0.3s;
+    }
+
+    .search-cancel-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .search-container.active .search-cancel-btn {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .search-icon {
+        cursor: pointer;
+        font-size: 1.25rem;
+    }
 
   /* Styles for Hero Section Carousel */
 
@@ -117,8 +153,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-        transition: transform 2s ease, opacity 2s ease;
+    transition: transform 2s ease, opacity 2s ease;
     background-repeat: no-repeat;
+    transition: smooth;
 
 }
 .carousel-item img {
