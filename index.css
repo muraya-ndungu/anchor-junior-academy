@@ -153,10 +153,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    transition: transform 2s ease, opacity 2s ease;
+    transition: transform 3s ease, opacity 1s ease;
     background-repeat: no-repeat;
-    transition: smooth;
-
+   transition: smooth;
 }
 .carousel-item img {
     width: 100%;
@@ -215,58 +214,20 @@ body {
     display: block;
 }
 
- /*hero old */
-
-/*
-.carousel-item {
-    height: 100vh;
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
+.carousel {
     position: relative;
-    transition: transform 2s ease, opacity 2s ease;
-}
-.carousel-item img {
-    width: 100%;
-    height: 100vh; 
-    object-fit: cover;}
-
-.carousel-caption {
-    text-align: center;
 }
 
-.text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #fcb900;
+    width: 0;
+    transition: width 3s linear; /* Match this duration with the interval between slides */
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .display-3 {
-        font-size: 2.5rem;
-    }
-    .lead {
-        font-size: 1rem;
-    }
-}
-
-.animate__animated {
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-}
-
-*/
 
 /* Styles for the download section */
 .download-section {
@@ -434,11 +395,11 @@ footer p {
     background-color: #fff; /* School uniform color */
     padding: 1rem;
     margin: 1rem auto; /* Center the section horizontally */
-    border: 2px solid #00796b; /* School uniform color */
+    border: 2px solid #fcb900 /* School uniform color */
     border-radius: 5px;
     max-width: 800px; /* Optional: Limit maximum width */
     text-align: center; /* Center align text */
-    font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+    font-family: 'Roboto', sans-serif; /*  Roboto font for headings */
 }
 
 .section.motto h2 {

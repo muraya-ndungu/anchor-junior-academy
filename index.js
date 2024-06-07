@@ -234,3 +234,21 @@ var linkOwlThemeCSS = document.createElement('link');
 linkOwlThemeCSS.rel = 'stylesheet';
 linkOwlThemeCSS.href = 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css';
 document.head.appendChild(linkOwlThemeCSS);
+
+
+//progress bar
+const progressBar = document.getElementById('progressBar');
+const carousel = document.getElementById('heroCarousel');
+
+carousel.addEventListener('slide.bs.carousel', () => {
+    progressBar.style.width = '0';
+});
+
+carousel.addEventListener('slid.bs.carousel', () => {
+    setTimeout(() => {
+        progressBar.style.width = '100%';
+    }, 50); // Small delay to trigger the CSS transition
+});
+
+// Initial load
+progressBar.style.width = '100%';
