@@ -3,19 +3,9 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: grey;
+    background-color:#000000;
     margin: 0;
     padding: 0;
-
-
-a {
-    color: #e0c62e; /* Yellow color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 
 /* Header Styles */
@@ -42,42 +32,81 @@ a:hover {
 }
 
 .navbar-nav .nav-link {
-    color: #555;
+    color: #fcb900;
     font-weight: 500;
     margin-right: 15px;
     transition: color 0.3s, background-color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: #fcb900;
     background-color: #f8f9fa;
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
-
-.navbar-nav .dropdown-menu {
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Show the dropdown menu on hover */
+.nav-link.dropdown-toggle::after {
+    display: none;
 }
 
-.navbar-nav .dropdown-item {
-    color: #555;
+#navbarDropdown:hover + .dropdown-menu,
+
+.dropdown-menu:hover {
+    display: block;
+    margin-top: 0; /* Adjust as needed to prevent the menu from shifting */
 }
 
-.navbar-nav .dropdown-item:hover {
-    background-color: #f8f9fa;
-    color: #007bff;
+.nav-item.dropdown {
+    position: relative;
 }
 
-.social-icons .nav-item .nav-link {
-    font-size: 1.0rem;
-    color: #555;
-    transition: color 0.3s;
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 }
 
-.social-icons .nav-item .nav-link:hover {
-    color: #046ddd;
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
+
+
+
+/* Yellow underline on hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: yellow;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
   
 
   /* Styles for Hero Section Carousel */
