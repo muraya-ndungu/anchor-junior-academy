@@ -235,6 +235,22 @@ linkOwlThemeCSS.rel = 'stylesheet';
 linkOwlThemeCSS.href = 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css';
 document.head.appendChild(linkOwlThemeCSS);
 
+document.addEventListener("DOMContentLoaded", function() {
+    const images = [
+        "IMG_20240212_161613_112.jpg",
+        "DSC_0260.jpg",
+        "hero-bg-2.jpg"
+    ];
+
+    preloadImages(images);
+});
+
+function preloadImages(images) {
+    for (let i = 0; i < images.length; i++) {
+        const img = new Image();
+        img.src = images[i];
+    }
+}
 
 //progress bar
 const progressBar = document.getElementById('progressBar');
